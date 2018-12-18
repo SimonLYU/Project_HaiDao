@@ -5,7 +5,8 @@ STEP_active = 0
 MAX_active_step = 3
 
 function active.func_keep_active()
-	x, y = findColorInRegionFuzzy(0x75c8f0, 99, 22, 1100, 100, 1120, 0, 0)
+	--	x, y = findColorInRegionFuzzy(0x75c8f0, 99, 22, 1100, 100, 1120, 0, 0)
+	x = 100
 	if x > -1 then--城内
 		util.hudToast("现在正在帮主人防止重载哦~")
 		if STEP_active == 0 then
